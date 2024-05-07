@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layout.css" />
+    <style>
+        /* Additional styles can be added here */
+        /* Header Styles */
+        .font-energetic {
+            font-family: 'energetic', sans-serif;
+        }
+
+        /* Navigation Styles */
+        .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #FFA500; /* Orange color */
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFA500; /* Orange color */
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1.25rem;
+            background-color: #FFA500; /* Orange color */
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background-color: #FF7F00; /* Darker shade of orange */
+        }
+
+        /* Footer Styles */
+        .footer-container {
+            background-color: #FFF;
+            padding: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .footer-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #FFA500; /* Orange color */
+        }
+
+        .footer-text {
+            color: #666;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="font-energetic flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black text-sm py-3 sm:py-0">
+        <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+            aria-label="Global">
+            <div class="flex items-center justify-between">
+                <a class="flex text-xl gap-2 items-center justify-center font-semibold text-white" aria-label="Brand"
+                    href="/">
+                    <img src="https://yralcgckodgemrozhvhn.supabase.co/storage/v1/object/public/websites-data/logo/T07SgciWJrnt1Kev"
+                        alt="" class="w-[40px] rounded-lg flex-1" />
+                    <p class="flex-shrink-0">VirtuStyle</p>
+                </a>
+                <div class="sm:hidden">
+                    <button type="button"
+                        class="hs-collapse-toggle size-9 flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border 
+                        border-orange-500
+                        text-orange-500
+                        hover:border-orange-500
+                        disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1"
+                        data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+                        aria-label="Toggle navigation">
+                        <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6"></line>
+                            <line x1="3" x2="21" y1="12" y2="12"></line>
+                            <line x1="3" x2="21" y1="18" y2="18"></line>
+                        </svg>
+                        <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18"></path>
+                            <path d="m6 6 12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="navbar-collapse-with-animation"
+                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+                <div
+                    class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/">Home</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/create">Create</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/about">About Us</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/gallery">Gallery</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/contact">Contact</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/quiz">Style Quiz</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/lookbook">Lookbook</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/book">Book a Session</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/faq">FAQ</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="/chat">Live Chat</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="container mx-auto flex px-5 py-24 pt-64 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">Welcome to VirtuStyle, your Online
+                    Stylist</h1>
+                <p class="mb-8 leading-relaxed">Discover the perfect look with our expert styling tips and curated
+                    collections.</p>
+                <div class="flex justify-center"><a class="inline-flex text-orange-100 bg-orange-500 hover:bg-orange-700
+                        border-0 py-2 px-6 focus:outline-none rounded text-lg" href="/create">Start Designing</a></div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-container">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class="mb-16 grid grid-cols-2 gap-12 border-t pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
+                <div class="col-span-full lg:col-span-2">
+                    <div class="mb-4 lg:-mt-2"><a class="text-black inline-flex items-center gap-2 text-xl font-bold
+                            md:text-2xl" aria-label="logo" href="/"><img
+                                src="https://yralcgckodgemrozhvhn.supabase.co/storage/v1/object/public/websites-data/logo/T07SgciWJrnt1Kev"
+                                alt="" class="w-[40px] rounded-lg flex-1" /><p class="flex-shrink-0">VirtuStyle</p></a>
+                    </div>
+                    <p class="text-gray-500 mb-6 sm:pr-8">© 2024 VirtuStyle. All rights reserved.</p>
+                </div>
+                <div>
+                    <div class="text-gray-500 mb-4 font-bold uppercase tracking-widest">QUICK LINKS</div>
+                    <nav class="flex flex-col gap-4">
+                        <div><a class="footer-link" href="/">Home</a></div>
+                        <div><a class="footer-link" href="/create">Create</a></div>
+                        <div><a class="footer-link" href="/about">About Us</a></div>
+                        <div><a class="footer-link" href="/gallery">Gallery</a></div>
+                        <div><a class="footer-link" href="/contact">Contact</a></div>
+                        <div><a class="footer-link" href="/quiz">Style Quiz</a></div>
+                        <div><a class="footer-link" href="/lookbook">Lookbook</a></div>
+                        <div><a class="footer-link" href="/book">Book a Session</a></div>
+                        <div><a class="footer-link" href="/faq">FAQ</a></div>
+                        <div><a class="footer-link" href="/chat">Live Chat</a></div>
+                    </nav>
+                </div>
+                <div>
+                    <div class="text-gray-500 mb-4 font-bold uppercase tracking-widest">CONNECT</div>
+                    <nav class="flex flex-col gap-4">
+                        <div><a class="footer-link" href="https://www.facebook.com/">Facebook</a></div>
+                        <div><a class="footer-link" href="https://www.instagram.com/">Instagram</a></div>
+                        <div><a class="footer-link" href="https://www.youtube.com/">Youtube</a></div>
+                    </nav>
+                </div>
+            </div>
+            <div class="text-gray-500 border-t py-8 text-center text-sm">VirtuStyle © 2024</div>
+        </footer>
+    </div>
+</body>
+
+</html>
