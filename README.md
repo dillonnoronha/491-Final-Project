@@ -10,17 +10,20 @@ VirtuStyle is a website designed to help you discover your personal style throug
 
 To access our website and use the Virtual Stylist, follow these steps:
 
-1. ** Downloading Epicgames launcher
+1. ** Downloading Epicgames launcher:
     Navigate to epicgames.com and download the launcher
 
-2. ** Downloading Unreal Engine
+2. ** Downloading Unreal Engine:
     Navigate to the unreal engine section and download the engine
 
-3. ** Access the Website**:
+3. ** Access the Website:
     Open your web browser and go to `virtustyle.xyz`
 
-4. ** Start Download**:
+4. ** Start Download:
     To access our virtual stylist in Unreal Engine 5, click on the "Start Download" button on the "Create" tab on our website.
+
+5. ** How to get started customizing a character:
+    Open the folder named VirtuStyle, and load up the ".exe" labeled Virtual Stylist by VirtuStyle.
 
 ## Contact Information
 
