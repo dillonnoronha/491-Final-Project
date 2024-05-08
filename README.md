@@ -1,6 +1,6 @@
 # VirtuStyle Website
 
-Welcome to VirtuStyle, where you can discover your personal style with our quick quiz and explore the latest fashion trends in our gallery and lookbook!
+Welcome to VirtuStyle, where you can discover your personal style with our quick quiz and explore the latest virtual fashion trends in our gallery and lookbook!
 
 ## Summary
 
